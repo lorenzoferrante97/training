@@ -1,0 +1,62 @@
+/**
+ * This injects Tailwind's base styles and any base styles registered by
+ * plugins.
+ */
+@tailwind base;
+/**
+ * This injects Tailwind's component classes and any component classes
+ * registered by plugins.
+ */
+@tailwind components;
+/**
+ * This injects Tailwind's utility classes and any utility classes registered
+ * by plugins.
+ */
+@tailwind utilities;
+
+
+/**
+ * Elementi base (colori del brand, font del brand, spacing personale...)
+ */
+@layer base {
+    /* h1 {
+        @apply text-2xl;
+    }
+    h2 {
+        @apply text-xl;
+    } */
+}
+
+/**
+ * Componenti personali (btn-primary, badge, card...)
+ */
+@layer components {
+    /* .btn-blue {
+        @apply px-4 py-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-700;
+    } */
+    
+    /* container fixed alla dimensione del breakpoint */
+    .container-centered {
+        @apply container mx-auto px-4 sm:px-5 lg:px-7 xl:px-10;
+    }
+    /* container sempre al 100% - es. sezioni con colori di sfondo che prendono tutto lo schermo  */
+    .container-full {
+        @apply w-full px-4 sm:px-5 lg:px-7 xl:px-10;
+    }
+    /* container fluid fino a 1280px, poi fixed */
+    .container-fluid {
+        @apply w-full xl:container-centered px-4 sm:px-5 lg:px-7 xl:px-10;
+    }
+}
+
+/**
+ * Specifiche molto nel dettaglio (opacity, blur...)
+ */
+@layer utilities {
+    /* .filter-grayscale {
+        filter: grayscale(100%);
+    } */
+    .perfect-center {
+        @apply flex items-center justify-center;
+    }
+}

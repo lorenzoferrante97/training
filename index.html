@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bento</title>
+    <!-- imports -->
+    <link rel="stylesheet" href="css/imports.css">
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="src/output.css">
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="font-custom bg-slate-100">
+    <header class="container-full bg-white h-[12vh] mb-10 py-3">
+        <div class="h-full container-fluid bg-slate-200 perfect-center">
+            <h1>header</h1>
+        </div>
+
+    </header>
+    <main class="container-fluid">
+        <section class="perfect-center">
+            <div id="card" class="flex flex-col w-11/12 gap-5 p-5 bg-white sm:flex-row lg:w-6/12 xl:w-6/12 rounded-3xl">
+                <!-- card image -->
+                <figure class="w-full overflow-hidden rounded-xl sm:w-4/12">
+                    <img src="img/pappagallo.jpg" alt="pappagallo" class="object-cover w-full h-full">
+                </figure>
+                <!-- card content -->
+                <div class="flex flex-col w-full gap-5 sm:w-8/12">
+                    <span class="self-start px-4 py-2 text-xs font-bold uppercase rounded-full bg-amber-200 text-amber-700">Volatile</span>
+                    <p class="text-4xl font-bold">Pappagallo canarino giallo e verde</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero sapiente repellendus, cum doloremque similique eum iste consequuntur? Optio exercitationem laboriosam beatae, quibusdam soluta veritatis. Alias voluptates at sapiente adipisci esse.</p>
+                    <div class="flex items-center gap-3">
+                        <span class="text-5xl font-bold text-lime-500">149.90</span>
+                        <span class="line-through text-slate-400">199.90</span>
+                    </div>
+                    <button class="px-6 py-4 text-lg font-bold text-white bg-lime-600 rounded-xl">
+                        <a href="#">Scopri di più</a>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
