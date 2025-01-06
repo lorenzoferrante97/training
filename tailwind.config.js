@@ -9,5 +9,8 @@ module.exports = {
 
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require("flyonui"),
+    require("flyonui/plugin")
+  ],
 }
