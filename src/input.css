@@ -145,15 +145,15 @@
     }
 
     /* progressive growth */
-    /* 2-2 |  */
-    .cols4_2-2-2-2 {
-        @apply col-span-2;
+    /* 2-2 | 2-2 | 1-1-2-4 | 2-2-3-5 */
+    .cols4_2-1-2 {
+        @apply col-span-2 md:col-span-1 lg:col-span-2;
     }
-    .cols3_2-2-2-3 {
+    .cols4_2-2-3 {
         @apply col-span-2 lg:col-span-3;
     }
-    .cols3_2-2-3-6 {
-        @apply col-span-2 md:col-span-3 lg:col-span-6;
+    .cols4_2-4-5 {
+        @apply col-span-2 md:col-span-4 lg:col-span-5;
     }
 }
 
