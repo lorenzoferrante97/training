@@ -619,7 +619,10 @@ video {
 /* container fluid fino a 1280px, poi fixed */
 
 .container-fluid {
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
+  max-width: 96%;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -822,6 +825,11 @@ video {
   grid-column: 1 / -1;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -850,6 +858,10 @@ video {
   height: 12vh;
 }
 
+.h-\[20vh\] {
+  height: 20vh;
+}
+
 .h-\[20vw\] {
   height: 20vw;
 }
@@ -864,6 +876,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.max-w-\[96\%\] {
+  max-width: 96%;
 }
 
 .grid-cols-4 {

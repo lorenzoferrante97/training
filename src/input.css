@@ -45,7 +45,7 @@
     }
     /* container fluid fino a 1280px, poi fixed */
     .container-fluid {
-        @apply w-full px-4 xl:container-centered sm:px-5 lg:px-7 xl:px-10;
+        @apply w-full px-4 xl:container-centered sm:px-5 lg:px-7 xl:px-10 max-w-[96%] mx-auto;
     }
 
     /* --- 2 cols --- */
