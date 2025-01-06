@@ -153,7 +153,42 @@
 
     <!-- test sito web -->
 
-    
+    <header class="flex items-center justify-between gap-2 py-3 bg-white rounded-full shadow navbar container-fluid">
+        <div class="navbar-start max-md:w-1/4">
+            <a class="text-xl font-semibold no-underline link text-base-content link-neutral" href="#">Logo</a>
+        </div>
+        <nav class="navbar-center max-md:hidden">
+            <ul class="gap-3 p-0 font-medium menu menu-horizontal">
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+        </nav>
+        <div class="items-center gap-4 navbar-end">
+            <nav class="dropdown relative inline-flex md:hidden rtl:[--placement:bottom-end]">
+                <button id="dropdown-default" type="button" class="dropdown-toggle btn btn-text btn-secondary btn-square" aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
+                    <span class="icon-[tabler--menu-2] dropdown-open:hidden size-5"></span>
+                    <span class="icon-[tabler--x] dropdown-open:block hidden size-5"></span>
+                </button>
+                <ul class="hidden gap-3 bg-white dropdown-menu dropdown-open:opacity-100 min-w-60" role="menu" aria-orientation="vertical" aria-labelledby="dropdown-default">
+                    <li><a class="dropdown-item" href="#">Link 1</a></li>
+                    <li><a class="dropdown-item" href="#">Link 2</a></li>
+                    <li><a class="dropdown-item" href="#">Link 3</a></li>
+                </ul>
+            </nav>
+            <a class="btn max-md:btn-square btn-primary" href="#">
+                <span class="max-md:hidden">Get started</span>
+                <span class="icon-[tabler--arrow-right]"></span>
+            </a>
+        </div>
+    </header>
+
+    <main class="container-fluid">
+        <section id="hero">
+
+        </section>
+
+    </main>
 
     <script src="../node_modules/flyonui/flyonui.js"></script>
 
