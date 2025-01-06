@@ -869,12 +869,123 @@ html {
   --erc: 97.5752% 0.015143 61.349242;
 }
 
-/* h1 {
-        @apply text-2xl;
-    }
-    h2 {
-        @apply text-xl;
-    } */
+h1 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  line-height: 1.375;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.375;
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 1.375;
+}
+
+@media (min-width: 768px) {
+  h3 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  h3 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+h4 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+  line-height: 1.375;
+}
+
+@media (min-width: 768px) {
+  h4 {
+    font-size: 1.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  h4 {
+    font-size: 2rem;
+  }
+}
+
+h5 {
+  font-size: 1.25rem;
+  line-height: 1.625rem;
+  font-weight: 500;
+  line-height: 1.375;
+}
+
+@media (min-width: 768px) {
+  h5 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  h5 {
+    font-size: 1.75rem;
+  }
+}
+
+h6 {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  line-height: 1.375;
+}
+
+@media (min-width: 768px) {
+  h6 {
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  h6 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
 
 /**
  * This injects Tailwind's component classes and any component classes
@@ -4567,6 +4678,38 @@ html {
 
 /* 3-1 | 3-1 | 5-3 | 7-5 */
 
+.cols2_full-4-7 {
+  grid-column: 1 / -1;
+}
+
+@media (min-width: 768px) {
+  .cols2_full-4-7 {
+    grid-column: span 4 / span 4;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cols2_full-4-7 {
+    grid-column: span 7 / span 7;
+  }
+}
+
+.cols2_full-4-5 {
+  grid-column: 1 / -1;
+}
+
+@media (min-width: 768px) {
+  .cols2_full-4-5 {
+    grid-column: span 4 / span 4;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cols2_full-4-5 {
+    grid-column: span 5 / span 5;
+  }
+}
+
 /* 2 equals cols */
 
 /* 2-2 | 2-2 | 4-4 | 6-6 */
@@ -4640,6 +4783,57 @@ html {
     grid-column: span 5 / span 5;
   }
 }
+
+/* --- rows --- */
+
+/* classic website row */
+
+/* base + sm:4 col | md:8 col | lg:12 col */
+
+.row-webgrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+@media (min-width: 768px) {
+  .row-webgrid {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .row-webgrid {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+}
+
+/* flex row */
+
+/* fino a sm:col | md:row */
+
+.\!row {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .\!row {
+    flex-direction: row;
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .row {
+    flex-direction: row;
+  }
+}
+
+/* flex row centered content */
 
 /**
  * This injects Tailwind's utility classes and any utility classes registered
@@ -4946,6 +5140,10 @@ html {
 
 .hidden {
   display: none;
+}
+
+.aspect-square {
+  aspect-ratio: 1 / 1;
 }
 
 .size-4 {
@@ -7333,6 +7531,10 @@ html {
   .md\:gap-4 {
     gap: 1rem;
   }
+
+  .md\:gap-6 {
+    gap: 1.5rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -7386,6 +7588,10 @@ html {
 
   .lg\:gap-5 {
     gap: 1.25rem;
+  }
+
+  .lg\:gap-12 {
+    gap: 3rem;
   }
 }
 
