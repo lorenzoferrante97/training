@@ -3,8 +3,22 @@ module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
 
+    // --- FONT ---
+
     fontFamily: {
       'custom': ['Urbanist', 'sans-serif'],
+    },
+
+    // --- BORDER RADIUS ---
+
+    borderRadius: {
+      'none': '0',
+      'sm': '0.25rem',
+      DEFAULT: '0.5rem',
+      'md': '1rem',
+      'lg': '2rem',
+      'xl': '4rem',
+      'full': '9999px',
     },
 
     extend: {},
